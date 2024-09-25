@@ -1,50 +1,54 @@
 # Private Equity Target Finder App
 
-This app helps private equity professionals find the top 3 target companies to acquire based on specific investment criteria.
+This app assists private equity professionals in identifying the top 3 **real** target companies for acquisition based on specific investment criteria.
 
 ## User Journey
 
-1. **Login**
+1. **Sign In**
 
-   - User opens the app.
-   - If not already logged in, the user is prompted to "Sign in with ZAPT".
-   - User clicks "Sign in with ZAPT" and completes the authentication process using available providers (Google, Facebook, Apple).
+   - The user opens the app.
+   - If not already signed in, the user is prompted to **"Sign in with ZAPT"**.
+   - Above the authentication component, the text **"Sign in with ZAPT"** is displayed.
+   - A link to the ZAPT marketing site [https://www.zapt.ai](https://www.zapt.ai) is available and opens in a new tab.
+   - The user completes the authentication process using one of the available providers: **Google**, **Facebook**, or **Apple**.
 
 2. **Set Investment Criteria**
 
-   - After logging in, the user is presented with a form to enter investment criteria:
-     1. **Purchase Price Range**
-        - Minimum Purchase Price
-        - Maximum Purchase Price
-     2. **Location**
-        - Text input for preferred location.
-     3. **Growth Target Percentage**
-        - Numeric input for desired growth target (in percentage).
-     4. **Industry**
-        - Text input for the industry of interest.
+   - After signing in, the user is presented with a form to enter their investment criteria:
+     - **Minimum Purchase Price**: Numeric input for the minimum desired purchase price.
+     - **Maximum Purchase Price**: Numeric input for the maximum desired purchase price.
+     - **Location**: Text input for the preferred location (city, state, or country).
+     - **Growth Target Percentage**: Numeric input for the desired growth target percentage.
+     - **Industry**: Text input for the industry of interest.
 
 3. **Find Target Companies**
 
-   - User clicks the "Find Target Companies" button.
-   - The app displays a loading indicator while processing the request.
+   - The user clicks the **"Find Target Companies"** button.
+   - A loading indicator appears on the button with the text **"Finding Companies..."** to indicate the request is being processed.
+   - The button is disabled during the loading state to prevent multiple submissions.
 
 4. **View Results**
 
-   - The app displays the top 3 target companies matching the criteria.
+   - The app displays the top 3 **real** companies that match the provided investment criteria.
    - For each company, the following information is displayed:
-     - Company Name
-     - Purchase Price
-     - Location
-     - Expected Growth Percentage
-     - Industry
+     - **Company Name**
+     - **Purchase Price**
+     - **Location**
+     - **Expected Growth Percentage**
+     - **Industry**
+   - The company cards are interactive, with a hover effect that slightly scales them for a dynamic user experience.
 
 5. **Sign Out**
 
-   - User can sign out of the app by clicking the "Sign Out" button.
+   - The user can sign out of the app by clicking the **"Sign Out"** button at the top-right corner.
+   - The app updates in real-time, returning the user to the sign-in page without requiring a page refresh.
 
 ## Features
 
-- Responsive and user-friendly interface.
-- Secure authentication with Supabase and ZAPT.
-- AI-powered backend to dynamically find target companies based on criteria.
-- Real-time updates and loading indicators for a smooth user experience.
+- **Responsive Design**: The app is fully responsive and looks great on all screen sizes, from mobile to desktop.
+- **User-Friendly Interface**: Clean and intuitive interface with clear labels and input fields.
+- **Secure Authentication**: Authentication is handled securely through Supabase with support for social login providers.
+- **Real-Time Loading Indicators**: Users receive immediate feedback when their request is being processed.
+- **Interactive Elements**: Buttons and company cards have hover effects to enhance user engagement.
+- **Prevent Multiple Submissions**: Buttons are disabled during loading to prevent duplicate requests.
+- **Real Company Data**: The app provides information on **real** companies that match the user's investment criteria, ensuring accurate and valuable insights.
